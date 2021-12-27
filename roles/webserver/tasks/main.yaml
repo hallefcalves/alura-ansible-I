@@ -1,0 +1,13 @@
+- name: 'Instala pacotes de dependencia do SO'
+  apt:
+    name: 
+      - php7.2
+      - apache2
+      - libapache2-mod-php7.2
+      - php7.2-gd
+      - php-ssh2
+      - mcrypt
+      - php7.2-mysql
+    update_cache: yes
+    state: latest
+  become: yes
